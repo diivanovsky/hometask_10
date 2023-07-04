@@ -16,6 +16,7 @@ drink = Soda()
 drink.taste = "Strawberry"
 print(drink)
 
+
 # Task 2
 class Math:
 
@@ -45,3 +46,29 @@ print(mult.multiplication(10, 3))
 print(div.division(10, 3))
 
 
+# Task 3
+class Car:
+    def __init__(self, color, type, year):
+        self.color = color
+        self.type = type
+        self.year = year
+
+    def start(self):
+        print("Car started")
+
+    def off(self):
+        print("Car is turned off")
+
+    def set_color(self, color):
+        self.color = color
+
+    def set_type(self, type):
+        self.type = type
+
+    def set_year(self, year):
+        self.year = year
+
+
+car = Car(color="red", type="electric", year="2011")
+car.start()
+car.off()
